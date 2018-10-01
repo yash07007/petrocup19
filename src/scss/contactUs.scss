@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+// variables
+$card-width:  350px;
+$card-height: 350px;
+$h-color:     #9CC9E3;
+$yellow:      #D0BB57;
+$txt-color:   #DCE3E7;
+$bg-color:    #94f06e;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  // background: $bg-color;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+              linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+              linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+              linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-size: 20px 20px;
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media(max-width: 800px){
+    body{
+        flex-flow: column;
+        height: auto;
+    }
+}
+
+.card{
+    width: $card-width;
+    margin: 5%;
+    transition: transform 300ms, box-shadow 300ms;
+    &:hover{
+        box-shadow: 7px 7px 50px 8px rgba(255, 255, 255, .5);
+        transform:  scale(1.1);
+    }
+}

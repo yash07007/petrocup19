@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+body{
+    //HONEY COMB
+    // background:
+    // radial-gradient(circle farthest-side at 0% 50%,#222 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    // radial-gradient(circle farthest-side at 0% 50%,black 24%,rgba(240,166,17,0) 0)19px 30px,
+    // linear-gradient(#222 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#222 0)0 0,
+    // linear-gradient(150deg,#222 24%,black 0,black 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,black 0,black 76%,#222 0)0 0,
+    // linear-gradient(30deg,#222 24%,black 0,black 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,black 0,black 76%,#222 0)0 0,
+    // linear-gradient(90deg,black 2%,#222 0,#222 98%,black 0%)0 0 #222;
+    // background-size:40px 60px;
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+                linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+                linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+                linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+                linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+                linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-size: 20px 20px;
+    background-color: #131313;
+}
+
+.section{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(58,175,169);
+}
+
+.tablet{
+    width: 60%;
+    height: 150px;
+    background: rgb(58,175,169);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid black;
+    margin: 40px 0;
+
+    img{
+        width: 40%;
+    }
+
+    .content{
+        margin-left: 10px;
+        padding: 10px;
+        // border: 1px solid red;
+        hr{
+            margin: 0;
+            width: 100%;
+            border: 1.5px solid black;
+
+        }
+        .mail{
+            margin-bottom: 0;
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: Roboto;
+            }
+        }
+        .icons{
+            font-size: 1.5em;
+            padding: 0 18px;
+            border-right: 3px solid #222;
+            border-left: 3px solid #222;
+            border-top: 3px solid #222;
+            border-bottom: 3px solid #222;
+            margin-top: 10px;
+            border-radius: 50px;
+        }
+    }
+
+}
+@media(max-width:600px){
+    .tablet{
+        width: 100%;
+        font-size: 1.2em;
+        h4{
+            font-size: 1.5em;
+        }
+    }
+}
+@media(min-width:750px){
+    .tablet{
+        height: 200px;
+        font-size: 1.5em;
+        h4{
+            font-size: 2.0em;
+        }
+    }
+}
+
+.tablet:nth-child(odd){
+    left: 0;
+}
+.tablet:nth-child(even){
+    right: 0;
+    text-align: right;
+    flex-direction: row-reverse;
+}

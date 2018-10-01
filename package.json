@@ -1,0 +1,23 @@
+{
+  "name": "bs4stater",
+  "version": "1.0.0",
+  "description": "Bootstap Workflow",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Yash Solanki",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^3.0.0-beta.5",
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
