@@ -1,0 +1,51 @@
+.row-1{
+    align-self: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3em;
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.row-2{
+    animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+}
+.row-3{
+    align-self: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2em;
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000)1s both;
+    font-size: 30px;
+}
+.row-4{
+    animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715)1s both;
+}
+@keyframes puff-in-top {
+    0% {
+        transform: scale(2);
+        transform-origin: 50% 0%;
+        filter: blur(2px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 0%;
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
