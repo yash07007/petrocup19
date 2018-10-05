@@ -11,7 +11,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function () {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js','node_modules/aos/dist/aos.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js','node_modules/aos/dist/aos.js','node_modules/swiper/dist/js/swiper.min.js'])
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.stream());
 });
@@ -29,9 +29,9 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('src/fonts'));
 });
 
-gulp.task('fa', function () {
-    return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+gulp.task('css', function () {
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css','node_modules/swiper/dist/css/swiper.min.css'])
     .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('default', ['js', 'serve', 'fa', 'fonts']);
+gulp.task('default', ['js', 'serve', 'css', 'fonts']);
