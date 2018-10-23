@@ -2,9 +2,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
-
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss','node_modules/aos/src/sass/aos.scss'])
+    return gulp.src(['src/scss/*.scss', 'node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/aos/src/sass/aos.scss', 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss', 'node_modules/hover.css/scss/hover.scss'])
     .pipe(sass())
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());

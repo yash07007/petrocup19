@@ -1,0 +1,106 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(242, 185, 133);
+
+    .container{
+        position: absolute;
+        top: 20%;
+        left: 13%;
+
+        .row{
+            display: flex;
+            flex-flow: row;
+        }
+
+        .box{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: #ccc;
+            transition: 0.5s;
+
+            &:hover{
+                transform: scale(1.1);
+                z-index: 1;
+                box-shadow: 0 5px 20px rgba(0,0,0,1);
+
+                .details .content {
+                  top: calc(50%);
+
+                  a {
+                     transform: scale(1);
+                  }
+
+                }
+            }
+
+            &:nth-child(1) .details{
+              background-color: rgb(44, 45, 44);
+            }
+
+            &:nth-child(2) .details{
+              background-color: rgb(44, 45, 44);
+            }
+
+            &:nth-child(3) .details{
+              background-color: rgb(44, 45, 44);
+            }
+
+            &:nth-child(4) .details{
+              background-color: rgb(44, 45, 44);
+            }
+
+            .details{
+                position: absolute;
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                background-color: #262626;
+
+                .content{
+                  position: absolute;
+                  top: calc(50% - 16px);
+                  transform: translateY(-50%);
+                  width: 100%;
+                  padding: 20px;
+                  box-sizing: border-box;
+                  text-align: center;
+                  transition: 0.5s;
+
+                    .fas{
+                      font-size: 80px;
+                      // color: #fff;
+                      color: rgb(239, 110, 45);
+                  }
+
+                    h3{
+                      margin: 0;
+                      padding: 0;
+                      padding: 10px 0;
+                      // color: #fff;
+                      color: rgb(239, 110, 45);
+                    }
+
+                    a{
+                      display: inline-block;
+                      padding: 5px 20px;
+                      // color: #fff;
+                      color: rgb(239, 110, 45);
+                      border: 2px solid #fff;
+                      text-decoration: none;
+                      transition: 0.3s;
+                      border-radius: 20px;
+                      transform: scale(0);
+
+                      &:hover{
+                        background: #fff;
+                        color: #262626;
+                      }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
