@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -57,18 +57,128 @@
             </a>
         </center>
     </section>
+    <section id="team">
+        <div class="container">
+            <h1 class="heading">Meet Our Team</h1>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item slide">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="imgs/avatar.png">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Williamson</h3>
+                                    <span class="post">Web Developer</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item slide">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="imgs/avatar.png">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Peterson</h3>
+                                    <span class="post">App Developer</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item slide">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="imgs/avatar3.png">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Bob</h3>
+                                    <span class="post">Data Analyst</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item slide">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="imgs/avatar4.png">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Jhonson</h3>
+                                    <span class="post">Manager</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item slide">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="imgs/avatar5.png">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Alice</h3>
+                                    <span class="post">Hacker</span>
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="contacts">
+        <div id="map"></div>
+        <a href="https://www.google.com/maps/place/Pandit+Deendayal+Petroleum+University/@23.1563381,72.6633324,17z/data=!3m1!4b1!4m5!3m4!1s0x395e802cfe647e33:0x983a11b5cb484f15!8m2!3d23.1563332!4d72.6655211">location</a>
+        <div class="heading">
+              <div id="cont"> <b>Contact us</b></div>
+              <div id="details">
+                    <h3>Address</h3>
+                    <br>
+                    <h4>PDPU Campus,Raysan,Gandhinagar</h4>
+                    <br>
+                    <h4>Gujarat-382421</h4>
+                    <h4>Contact: 8058053557</h4>
+              </div>
+        </div>
+    </section> -->
     <section id="contacts">
         <footer>
-            <div id="encode">
-            <label for="elogo">Powered By :</label>
-            <img src="imgs/encodeLogo.jpeg" alt="Encode Logo">
+            <div class="container">
+                <h1>Contact Us</h1>
             </div>
         </footer>
     </section>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
+        var lcd_width = 1199;
+        var slcd_width = 991;
+        var tab_width = 768;
+        var smob_width = 575;
         $('#hamburger').on('click', function() {
             $('#hamburger').toggleClass('is-active');
             $('#menu').toggleClass('openmenu');
@@ -79,6 +189,48 @@
             $('#menu').toggleClass('openmenu');
             $('#menu li a').toggleClass('opacity');
         });
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                margin:20,
+                autoplay:true,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    768:{
+                        items:2
+                    },
+                    991:{
+                        items:4
+                    },
+                    1199:{
+                        items:5
+                    }
+                }
+            });
+        });
+        // $('.owl-carousel').on('mousewheel', '.owl-stage', function (e) {
+        //     console.log(e);
+        //     if (e.deltaY>0) {
+        //         $('.owl-carousel').trigger('next.owl');
+        //     } else if (e.deltaY<0) {
+        //         $('.owl-carousel').trigger('prev.owl');
+        //     }
+        //     e.preventDefault();
+        // });
+        // function initMap() {
+        //     var location={lat: 23.1574807, lng: 72.6661617};
+        //     var map= new google.maps.Map(document.getElementById("map"),{
+        //       zoom: 8,
+        //       center: location
+        //     });
+        //     var marker= new google.maps.Marker({
+        //       position: location,
+        //       map: map
+        //     });
+        // }
     </script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap"></script> -->
 </body>
 </html>
