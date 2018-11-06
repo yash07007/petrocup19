@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "aos": "^3.0.0-beta.5",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.1.3",
     "font-awesome": "^4.7.0",
     "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
