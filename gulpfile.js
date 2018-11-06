@@ -3,14 +3,14 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-    return gulp.src(['src/scss/*.scss', 'node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/aos/src/sass/aos.scss', 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss', 'node_modules/hover.css/scss/hover.scss'])
+    return gulp.src(['src/scss/*.scss', 'node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss', 'node_modules/hover.css/scss/hover.scss'])
     .pipe(sass())
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('js', function () {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js','node_modules/aos/dist/aos.js','node_modules/swiper/dist/js/swiper.min.js','node_modules/owl.carousel/dist/owl.carousel.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js','node_modules/owl.carousel/dist/owl.carousel.min.js'])
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.stream());
 });
@@ -29,7 +29,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css','node_modules/swiper/dist/css/swiper.min.css','node_modules/owl.carousel/dist/assets/owl.carousel.min.css'])
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css','node_modules/owl.carousel/dist/assets/owl.carousel.min.css'])
     .pipe(gulp.dest('src/css'));
 });
 

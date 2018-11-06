@@ -1,5 +1,9 @@
 $primary-color: #0072ff;
 $font-color: black;
+$lcd-width: 1199px;
+$slcd-width: 991px;
+$tab-width: 768px;
+$smob-width: 575px;
 
 body{
     background: #00c6ff !important;
@@ -85,14 +89,13 @@ div[class*='col']{
     margin: 0;
     padding: 0;
 }
-// @media(min-width: 400px){
-//     body{
-//         background-color: blue !important;
-//     }
-//     .box .details{
-//         background-color: red;
-//     }
-//     .content a{
-//         display: none;
-//     }
-// }
+@media(max-width: $tab-width){
+    .box{
+        .details .content {
+            top: calc(50%);
+            a {
+                transform: scale(1) !important;
+            }
+        }
+    }
+}
