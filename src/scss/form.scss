@@ -1,4 +1,5 @@
-$primary-color: #0072ff;
+$primary-color: #00c6ff;
+$secondary-color: #09dca8;
 $font-color: black;
 $lcd-width: 1199px;
 $slcd-width: 991px;
@@ -9,63 +10,57 @@ body{
     background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
     .register-form{
         background: #fff;
-        margin-top: 10%;
-        margin-bottom: 5%;
-
+        margin: 50px 0;
         .register-image{
             text-align: center;
-
             img{
                 border: 3px solid black;
                 border-radius: 6rem;
-                width: 15%;
-                margin-top: -3%;
+                width: 100px;
+                transform: translateY(-50%);
             }
         }
         form{
-            padding: 14%;
+            padding: 0 50px;
             h3{
-                margin-bottom: 8%;
-                margin-top: -10%;
+                margin-bottom: 20px;
                 text-align: center;
                 color: #0062cc;
             }
-            h3 + .row{
-                div[class*='col']{
-                    &:nth-child(1){
-                        padding-left: 0px;
-                    }
-                    &:nth-child(2){
-                        padding-right: 0px;
-                    }
+            h4{
+                margin: 40px 0;
+                padding-left: 0;
+            }
+            .inpLabel{
+                margin-left: 12px;
+                transform: translateY(162%) translateX(5%) scale(1.2);
+                transition: transform 150ms ease-out,margin 150ms ease-out;
+                & + input{
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    padding-left: 0;
                 }
+            }
+            .focused {
+                margin-left: 0;
+                transform: translateY(60%) translateX(0) scale(1);
             }
             .row{
                 margin-bottom: 10px;
-                .form-control{
-                    border-radius:1rem;
-                }
-                .btnRegister {
-                    width: 50%;
-                    border: none;
-                    border-radius: 1rem;
-                    padding: 1.5%;
-                    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-                    font-weight: 600;
-                    color: #fff;
-                    cursor: pointer;
-                    margin: 10% 25%;
-                }
             }
-        }
-    }
-}
-@media(max-width:$tab-width){
-    h3 + .row{
-        div[class*='col']{
-            padding: 0px;
-            &:nth-child(1){
-                margin-bottom: 10px;
+            .btnRegister {
+                width: 50%;
+                border: none;
+                border-radius: 2rem;
+                padding: 1.5%;
+                background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                margin: 30px auto;
             }
         }
     }

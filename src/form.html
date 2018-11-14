@@ -11,161 +11,215 @@
             <div class="register-form">
                 <div class="register-image">
                     <!-- <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/> -->
-                    <img src="https://img.etimg.com/thumb/msid-59081102,width-300,imgsize-59610,resizemode-4/how-to-correct-errors-in-gst-registration.jpg" alt="Register">
+                    <!-- <img src="https://img.etimg.com/thumb/msid-59081102,width-300,imgsize-59610,resizemode-4/how-to-correct-errors-in-gst-registration.jpg" alt="Register"> -->
+                    <img src="imgs/petroLogo.png" alt="Register">
                 </div>
                 <form method="post">
-                    <h3>Register Here</h3>
+                    <h3 class="heading">Registeration Form</h3>
                     <div class="row">
-                        <div class="col-md-6">
-                            <input type="text"  name="fname" class="form-control" placeholder="First Name *" value="" />
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text"  name="lname" class="form-control" placeholder="Last Name *" value="" />
-                        </div>
+                            <label class="inpLabel" for="collegeName">College/University Name</label>
+                            <input type="text" name="collegeName" class="form-control" placeholder="" value="" />
+                    </div>
+                    <h4>Representative Information</h4>
+                    <div class="row">
+                            <label class="inpLabel" for="r-name">Name *</label>
+                            <input type="text"  name="r-name" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
-                            <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+                            <label class="inpLabel" for="r-phone">Phone Number *</label>
+                            <input type="text" name="r-phone" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
-                            <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            <label class="inpLabel" for="r-email">Email *</label>
+                            <input type="email" name="r-email" class="form-control" placeholder="" value="" />
+                    </div>
+                    <h4>Faculty Mentor Information</h4>
+                    <div class="row">
+                            <label class="inpLabel" for="f-name">Name *</label>
+                            <input type="text"  name="f-name" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
-                            <input type="text" name="cname" class="form-control" placeholder="College/University*" value="" />
+                            <label class="inpLabel" for="f-phone">Phone Number *</label>
+                            <input type="text" name="f-phone" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
-                            <input type="text" name="pin" class="form-control" placeholder="Pincode Where College/University is Present*" value="" />
+                            <label class="inpLabel" for="f-email">Email *</label>
+                            <input type="email" name="f-email" class="form-control" placeholder="" value="" />
                     </div>
-                    <label for="events">Events:</label>
+                    <h4>Select Events</h4>
+                    <h5>Mens Sports</h5>
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Atheletics">
-                                <label class="custom-control-label" for="Atheletics">Atheletics</label>
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Atheletics">
+                                <label class="custom-control-label" for="m-Atheletics">Atheletics</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Basketball">
+                                <label class="custom-control-label" for="m-Basketball">Basketball</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Badminton">
+                                <label class="custom-control-label" for="m-Badminton">Badminton</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Cricket">
+                                <label class="custom-control-label" for="m-Cricket">Cricket</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Gym">
+                                <label class="custom-control-label" for="m-Gym">Extreme-Gym</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Basketball">
-                                <label class="custom-control-label" for="Basketball">Basketball</label>
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Football">
+                                <label class="custom-control-label" for="m-Football">Football</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Kabaddi">
+                                <label class="custom-control-label" for="m-Kabaddi">Kabaddi</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Khokho">
+                                <label class="custom-control-label" for="m-Khokho">Kho-Kho</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Lawntennis">
+                                <label class="custom-control-label" for="m-Lawntennis">Lawn-Tennis</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Handball">
+                                <label class="custom-control-label" for="m-Handball">Handball</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Badminton">
-                                <label class="custom-control-label" for="Badminton">Badminton</label>
+                                <input type="checkbox" class="custom-control-input" name="events"  id="m-Skating">
+                                <label class="custom-control-label" for="m-Skating">Skating</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Tabletennis">
+                                <label class="custom-control-label" for="m-Tabletennis">Table-Tennis</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Taekwondo">
+                                <label class="custom-control-label" for="m-Taekwondo">Taekwondo</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="m-Volleyball">
+                                <label class="custom-control-label" for="m-Volleyball">Volleyball</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="events"  id="m-Yoga">
+                                <label class="custom-control-label" for="m-Yoga">Yoga</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                    </div>
+                    <h5>Womens Sports</h5>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Atheletics">
+                                <label class="custom-control-label" for="f-Atheletics">Atheletics</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Basketball">
+                                <label class="custom-control-label" for="f-Basketball">Basketball</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Badminton">
+                                <label class="custom-control-label" for="f-Badminton">Badminton</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Football">
+                                <label class="custom-control-label" for="f-Football">Football</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Kabaddi">
+                                <label class="custom-control-label" for="f-Kabaddi">Kabaddi</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Khokho">
+                                <label class="custom-control-label" for="f-Khokho">Kho-Kho</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Lawntennis">
+                                <label class="custom-control-label" for="f-Lawntennis">Lawn-Tennis</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="events"  id="f-Skating">
+                                <label class="custom-control-label" for="f-Skating">Skating</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Tabletennis">
+                                <label class="custom-control-label" for="f-Tabletennis">Table-Tennis</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Taekwondo">
+                                <label class="custom-control-label" for="f-Taekwondo">Taekwondo</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events" id="f-Volleyball">
+                                <label class="custom-control-label" for="f-Volleyball">Volleyball</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="events"  id="f-Yoga">
+                                <label class="custom-control-label" for="f-Yoga">Yoga</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>General Sports</h5>
+                    <div class="row">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input"  name="events" id="Chess">
                                 <label class="custom-control-label" for="Chess">Chess</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input"  name="events" id="Carrom">
                                 <label class="custom-control-label" for="Carrom">Carrom</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Cricket">
-                                <label class="custom-control-label" for="Cricket">Cricket</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Gym">
-                                <label class="custom-control-label" for="Gym">Extreme-Gym</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Football">
-                                <label class="custom-control-label" for="Football">Football</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="col-sm-4">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input"  name="events" id="Frisbee">
                                 <label class="custom-control-label" for="Frisbee">Frisbee</label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Kabaddi">
-                                <label class="custom-control-label" for="Kabaddi">Kabaddi</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Khokho">
-                                <label class="custom-control-label" for="Khokho">Kho-Kho</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Lawntennis">
-                                <label class="custom-control-label" for="Lawntennis">Lawn-Tennis</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Handball">
-                                <label class="custom-control-label" for="Handball">Handball</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events"  id="Skating">
-                                <label class="custom-control-label" for="Skating">Skating</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Tabletennis">
-                                <label class="custom-control-label" for="Tabletennis">Table-Tennis</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Taekwondo">
-                                <label class="custom-control-label" for="Taekwondo">Taekwondo</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events" id="Volleyball">
-                                <label class="custom-control-label" for="Volleyball">Volleyball</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events"  id="Yoga">
-                                <label class="custom-control-label" for="Yoga">Yoga</label>
-                            </div>
-                        </div>
                     </div>
-                    <label for="gender">Team:</label>
-                    <div class="row">
-                        <div class="col">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="male" name="gender" class="custom-control-input">
-                                <label class="custom-control-label" for="male">Male</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="female" name="gender" class="custom-control-input">
-                                <label class="custom-control-label" for="female">Female</label>
-                            </div>
-                        </div>
-                    </div>
+                    <h4>Accomodation Details</h4>
+                    <label for="accomodation">If you want accomodation, type in the required number?</label>
+                    <input type="number" name="accomodation" class="form-control" value="0" min="0" />
                     <div class="row">
                             <input type="submit" name="btnSubmit" class="btnRegister" value="Submit" />
                     </div>
                 </form>
             </div>
         </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('.inpLabel').click(function () {
+                $('.inpLabel + input').blur();
+                $(this).next().focus();
+            });
+            $('.inpLabel + input').focus(function() {
+                $(this).prev().addClass('focused');
+            });
+            $('.inpLabel + input').blur(function() {
+                if($(this)[0].value){
+                    console.log($(this)[0].value);
+                }
+                else{
+                    $(this).prev().removeClass('focused');
+                }
+            });
+        </script>
     </body>
 </html>
