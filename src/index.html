@@ -19,11 +19,12 @@
         </span>
     </button>
     <ul id="menu">
-        <li><a href="#aboutUs" class="hvr-underline-from-center">About Us</a></li>
-        <li><a href="#events" class="hvr-underline-from-center">Events</a></li>
-        <li><a href="sponsors.html" class="hvr-underline-from-center">Sponsors</a></li>
-        <li><a href="#contacts" class="hvr-underline-from-center">Contact Us</a></li>
-        <li><a href="form.html" class="hvr-underline-from-center">Register</a></li>
+        <li><a href="index.html" class="hvr-underline-from-center">Home</a></li>
+        <li><a href="index.html#aboutUs" class="hvr-underline-from-center">About Us</a></li>
+        <li><a href="events.html" class="hvr-underline-from-center">Events</a></li>
+        <li><a href="sponsers.html" class="hvr-underline-from-center">Sponsors</a></li>
+        <li><a href="index.html#contacts" class="hvr-underline-from-center">Contact Us</a></li>
+        <li><a href="form.php" class="hvr-underline-from-center">Register</a></li>
         <span class="socialTray">
             <span class="socialButtons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -33,6 +34,11 @@
         </span>
     </ul>
     <section id="home">
+        <div class="banner">
+          <video autoplay loop muted class="banner__video" poster="imgs/event/ath.jpg">
+            <source src="docs/Sequence 01_4.mp4" type="video/mp4">
+          </video>
+        </div>
         <img id="logo" class="img-fluid" src="imgs/petroLogo.png" alt="Petrocup Logo">
         <div id="title">
             <h1>Petrocup 2019</h1>
@@ -41,7 +47,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="form.html" class="flipButton">
+                    <a href="form.php" class="flipButton">
                         <span class="front">Register Here</span>
                         <span class="center"></span>
                         <span class="back"><i class="fa fa-arrow-right"></i></span>
@@ -242,6 +248,7 @@
         </footer>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.vide.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>

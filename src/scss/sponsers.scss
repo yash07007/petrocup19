@@ -1,0 +1,82 @@
+$primary-color: #00c6ff;
+$secondary-color: #09dca8;
+$font-color: black;
+$lcd-width: 1199px;
+$slcd-width: 991px;
+$tab-width: 768px;
+$smob-width: 575px;
+
+html{
+    width: 100%;
+    body{
+        width: 100%;
+        .jumbotron{
+            background-color: black;
+            border-radius: 0;
+            center{
+                .heading{
+                    background: $primary-color;
+                    background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
+                    background: -o-linear-gradient(left, $primary-color, $secondary-color);
+                    background: linear-gradient(to right, $primary-color, $secondary-color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color:transparent;
+                    text-transform: uppercase;
+                    margin: 0 0 40px 0;
+                    font-size: 4.0em;
+                    color: white;
+                    font-weight: 800;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .cont{
+            width: 85%;
+            margin-left: 7.5%;
+            margin-right: 7.5%;
+            .row{
+                margin-bottom: 50px;
+                padding-left: 40px;
+                .c1{
+
+                    width: 100%;
+                    img{
+                       width: 60%;
+                       height: 300px;
+                       margin: 40px 20%;
+                   }
+                   h1,h2{
+                       text-align: center;
+                   }
+                }
+                .c2{
+
+                    width: 50%;
+                    img{
+                        width: 60%;
+                        height: 300px;
+                        margin: 40px 20%;
+                    }
+                    h1,h2{
+                        text-align: center;
+                    }
+                }
+                .c3{
+                    width: 25%;
+                    img{
+                        width: 80%;
+                        height: 250px;
+                        /* margin: 40px 3%; */
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        /* border: 1px solid blue; */
+                    }
+                    h1,h2{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

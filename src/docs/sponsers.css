@@ -1,0 +1,52 @@
+html,body{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+ .c1 img{
+    width: 60%;
+    height: 300px;
+    margin: 40px 20%;
+}
+.c2 img{
+    width: 60%;
+    height: 300px;
+    margin: 40px 20%;
+}
+.c3 img{
+    width: 80%;
+    height: 250px;
+    /* margin: 40px 3%; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* border: 1px solid blue; */
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+.c2{
+
+    width: 50%;
+}
+.c3{
+    /* border: 1px solid black; */
+    width: 25%;
+}
+.c1{
+
+    width: 100%;
+}
+
+.cont{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    /* border: 1px solid red; */
+}
