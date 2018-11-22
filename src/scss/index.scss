@@ -6,10 +6,44 @@ $slcd-width: 991px;
 $tab-width: 768px;
 $smob-width: 575px;
 
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
 body{
-    background-color: black;
+    .preloder-wrapper{
+        position: fixed;
+        background-color: $primary-color;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000000;
+        img{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
     display: flex;
     flex-direction: column;
+    .bg{
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #09ffa8 50%, #0072ff 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: 0.5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+    .bg2{
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+    .bg3{
+        animation-duration: 5s;
+    }
     section{
         min-height: 100vh;
     }
@@ -26,7 +60,7 @@ body{
     }
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
         // background-color: #0072ff;
-        background-color: $primary-color;
+        background-color: $secondary-color;
     }
     #menu{
         list-style: none;
@@ -106,10 +140,7 @@ body{
         transform: translateX(0px) !important;
     }
     .heading{
-        background: $primary-color;
-        background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
-        background: -o-linear-gradient(left, $primary-color, $secondary-color);
-        background: linear-gradient(to right, $primary-color, $secondary-color);
+        background: white;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         text-transform: uppercase;
@@ -120,48 +151,26 @@ body{
         display: inline-block;
     }
     #home{
-        flex-direction: column;
-        display: flex;
-        .banner {
-          position: absolute;
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-        }
-
-        .banner__video {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: auto;
-          min-width: 100%;
-          height: auto;
-          min-height: 100%;
-          transform: translateX(-50%) translateY(-50%);
-          z-index: -1;
-          opacity: 0.7;
-        }
+        text-align: center;
         #logo{
-            width: 450px;
-            height: 300px;
-            align-self: center;
+            //ASPECT RATIO 1024x768
+            width: 393.85px;
+            height: 295.38px;
             z-index: 1;
-            // overflow-x: hidden;
+            overflow-x: hidden;
         }
         #title{
-            align-self: center;
-            text-transform: uppercase;
-            margin-top: 40px;
-            color: $primary-color;
-            z-index: 1;
-
-            h1{
-                text-align: center;
-                font-size: 3em;
+            color: #fff;
+            font-weight: bold;
+            z-index: 0;
+            text-align: center;
+            img{
+                //ASPECT RATIO 1382x463
+                height: 154.33px;
+                width: 460.33px;
             }
-            h3{
-                text-align: center;
-                font-size: 2em;
+            h1{
+                font-size: 3.5rem;
             }
         }
         .row .col{
@@ -192,10 +201,11 @@ body{
                 line-height: 60px;
                 font-size: 24px;
                 border-radius: 40px;
-                background-color: rgba(255, 255, 255, .05);
+                background-color: rgba(255, 255, 255, .5);
                 // text-transform: uppercase;
-                color: white;
+                color: black;
                 transition: 1s;
+                font-weight: bold;
 
                 &.front{
                     transform: rotateX(0deg) translateZ(20px);
@@ -207,7 +217,7 @@ body{
 
                 }
                 &.center{
-                    background-color: $primary-color;
+                    // background-color: white;
                 }
             }
 
@@ -225,9 +235,18 @@ body{
     }
     #aboutUs{
         position: relative;
-        background: #fff;
         padding-bottom: 30px;
+        font-family: Questrial;
+        font-weight: bold;
+        .heading{
+            background: #000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+        }
         .container{
+            background: rgba(#fff, 0.7);
+            border-radius: 10px;
+            padding: 0px 25px 25px 25px;
             .display{
                 display: none;
             }
@@ -252,12 +271,13 @@ body{
         }
     }
     #glory{
-        background: #000;
+        background-color: rgba(#000, 0.7);
+        padding-bottom: 50px;
     }
     #team{
-        background: #fff;
-        margin-top: 40px;
         min-height: 400px;
+        padding-bottom: 50px;
+
         .slide{
             display: flex;
             justify-content: center;
@@ -285,7 +305,7 @@ body{
             &:hover{
                 .pic{
                     // padding: 10px;
-                    // border-radius: 10px;
+                    // border-radius: 40px;
                     transform: scale(0.8) translateY(-10%);
                 }
                 .team-content{
@@ -342,29 +362,13 @@ body{
                         &:hover{
                             color: $primary-color;
                         }
-                        // &:hover{
-                        //     &:before{
-                        //         left: 0;
-                        //     }
-                        // }
-                        // &:before{
-                        //     content: "";
-                        //     width: 100%;
-                        //     height: 100%;
-                        //     background: #00c6ff;
-                        //     position: absolute;
-                        //     top: 0;
-                        //     left: -100%;
-                        //     z-index: -1;
-                        //     transition: all 0.3s ease-in-out 0s;
-                        // }
                     }
                 }
             }
         }
     }
     #contacts{
-        background-color: #000;
+        background-color: rgba(#000, 0.7);
         color: white;
         footer{
             div[class*='col']{
@@ -407,8 +411,7 @@ body{
 @media(max-width:$tab-width){
     .our-team{
         .pic{
-        //     padding: 10px;
-        //     border-radius: 10px;
+            // border-radius: 10px;
             transform: scale(0.8) translateY(-10%);
         }
         .team-content{
@@ -416,4 +419,49 @@ body{
             bottom: -10px !important;
         }
     }
+    #logo{
+        height: 256px !important;
+        width: 341.33px !important;
+    }
+    #title{
+        img{
+            height: 92.6px !important;
+            width: 276.2px !important;
+        }
+    }
+    #aboutUs{
+        .container{
+            border-radius: 0px !important;
+        }
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(25%);
+    }
+}
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

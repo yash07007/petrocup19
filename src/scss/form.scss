@@ -7,34 +7,53 @@ $tab-width: 768px;
 $smob-width: 575px;
 
 body{
-    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+    background: -webkit-linear-gradient(-60deg, #09ffa8 50%, #0072ff 50%);
+    background: -o-linear-gradient(-60deg, #09ffa8 50%, #0072ff 50%);
+    background: linear-gradient(-60deg, #09ffa8 50%, #0072ff 50%);
     .register-form{
-        background: #fff;
-        margin: 50px 0;
+        background: rgba(#000, 0.2);
+        margin: 80px 0;
         .register-image{
             text-align: center;
             img{
-                border: 3px solid black;
-                border-radius: 6rem;
-                width: 100px;
-                transform: translateY(-50%);
+                width: 200px;
             }
+        }
+        .heading{
+            background: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color:transparent;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            margin-top:  0px;
+            font-size: 3.0em;
+            color: white;
+            font-weight: 800;
+            display: block;
+            text-align: center;
         }
         form{
             padding: 0 50px;
-            h3{
-                margin-bottom: 20px;
-                text-align: center;
-                color: #0062cc;
-            }
+            color: #fff;
             h4{
-                margin: 40px 0;
+                margin: 50px 0;
+                text-align: center;
                 padding-left: 0;
+                font-size: 2.0em;
+            }
+            input{
+                background: rgba(#000, 0);
+                color: white;
+                &:focus{
+                    background: rgba(#000, 0);
+                    color: white;
+                }
             }
             .inpLabel{
                 margin-left: 12px;
                 transform: translateY(162%) translateX(5%) scale(1.2);
                 transition: transform 150ms ease-out,margin 150ms ease-out;
+                font-style: italic;
                 & + input{
                     border-top: none;
                     border-right: none;
@@ -56,11 +75,26 @@ body{
                 border: none;
                 border-radius: 2rem;
                 padding: 1.5%;
-                background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+                background: rgba(#fff, 0.6);
                 font-weight: 600;
-                color: #fff;
+                color: #000;
                 cursor: pointer;
                 margin: 30px auto;
+            }
+        }
+    }
+}
+@media(max-width:$slcd-width){
+    .container,.container-fluid{
+        padding: 0 !important;
+        .register-form{
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            .register-image{
+                img{
+                    height: auto !important;
+                    width: 300px !important;
+                }
             }
         }
     }
