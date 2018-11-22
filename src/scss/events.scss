@@ -299,7 +299,10 @@ div[class*='col']{
         margin: 50px 50px 50px 50px;
     }
     .menu{
+        transform: translateZ(30px) !important;
         padding-top: 150px !important;
+        padding-left: 150px !important;
+        left: -160px !important;
         li{
             margin: 40px 0 !important;
             a{
@@ -317,6 +320,7 @@ div[class*='col']{
     }
     .openmenu{
         width: 1000px !important;
+        left: 0px !important;
     }
     center{
         img{
