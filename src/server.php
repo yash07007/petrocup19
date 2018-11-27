@@ -19,8 +19,8 @@ if (isset($_POST['submit'])) {
     $accomodation = "";
     $events = array();
     $event_string = "";
-    // $db = mysqli_connect('localhost', 'root', '', 'petroreg');
-    $db = mysqli_connect('localhost', 'flareslp_Encode', 'encode', 'flareslp_petro');
+    $db = mysqli_connect('localhost', 'root', '', 'petroreg');
+    // $db = mysqli_connect('localhost', 'flareslp_Encode', 'encode', 'flareslp_petro');
 
     if (!$db) {
         die("Connection failed: " . $db->connect_error);
@@ -58,6 +58,7 @@ if (isset($_POST['submit'])) {
         if (!$x) {
             echo "Error: " . $x . "<br>" . $query . "<br> aa" .mysqli_error($db);
         }
+        header('Location: thankYou.html');
     }
 }
 ?>

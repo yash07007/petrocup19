@@ -113,14 +113,14 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events[]"  value="m-Skating-Quad" id="m-Skating">
-                                <label class="custom-control-label" for="m-Skating">Skating&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 300/-</label>
+                                <input type="checkbox" class="custom-control-input" name="events[]"  value="m-Skating-Quad" id="m-Skating-Quad">
+                                <label class="custom-control-label" for="m-Skating-Quad">Skating Inline&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 300/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events[]"  value="m-Skating-Inline" id="m-Skating">
-                                <label class="custom-control-label" for="m-Skating">Skating&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
+                                <input type="checkbox" class="custom-control-input" name="events[]"  value="m-Skating-Inline" id="m-Skating-Inline">
+                                <label class="custom-control-label" for="m-Skating-Inline">Skating Quad&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -194,14 +194,14 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events[]"  value="f-Skating-Quad" id="f-Skating">
-                                <label class="custom-control-label" for="f-Skating">Skating&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 300/-</label>
+                                <input type="checkbox" class="custom-control-input" name="events[]"  value="f-Skating-Quad" id="f-Skating-Quad">
+                                <label class="custom-control-label" for="f-Skating-Quad">Skating Quad&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 300/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="events[]"  value="f-Skating-Inline" id="f-Skating">
-                                <label class="custom-control-label" for="f-Skating">Skating&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
+                                <input type="checkbox" class="custom-control-input" name="events[]"  value="f-Skating-Inline" id="f-Skating-Inline">
+                                <label class="custom-control-label" for="f-Skating-Inline">Skating Inline&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
