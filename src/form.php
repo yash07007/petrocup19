@@ -29,7 +29,7 @@
                     </div>
                     <div class="row">
                             <label class="inpLabel" for="r-phone">Phone Number *</label>
-                            <input type="text" name="r-phone" class="form-control" placeholder="" value="" />
+                            <input type="number" name="r-phone" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
                             <label class="inpLabel" for="r-email">Email *</label>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="row">
                             <label class="inpLabel" for="f-phone">Phone Number *</label>
-                            <input type="text" name="f-phone" class="form-control" placeholder="" value="" />
+                            <input type="number" name="f-phone" class="form-control" placeholder="" value="" />
                     </div>
                     <div class="row">
                             <label class="inpLabel" for="f-email">Email *</label>
@@ -54,7 +54,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input"  name="events[]" value="m-Atheletics" id="m-Atheletics">
-                                <label class="custom-control-label" for="m-Atheletics">Atheletics&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 100/-</label>
+                                <label class="custom-control-label" for="m-Atheletics">Athletics&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 100/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -101,8 +101,14 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events[]" value="m-Lawntennis" id="m-Lawntennis">
-                                <label class="custom-control-label" for="m-Lawntennis">Lawn-Tennis&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 1000/-</label>
+                                <input type="checkbox" class="custom-control-input"  name="events[]" value="m-Lawntennis-Team" id="mt-Lawntennis">
+                                <label class="custom-control-label" for="mt-Lawntennis">Lawn-Tennis Team&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 1000/-</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events[]" value="m-Lawntennis-Single" id="ms-Lawntennis">
+                                <label class="custom-control-label" for="ms-Lawntennis">Lawn-Tennis Single&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 300/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -153,7 +159,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input"  name="events[]" value="f-Atheletics" id="f-Atheletics">
-                                <label class="custom-control-label" for="f-Atheletics">Atheletics&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 50/-</label>
+                                <label class="custom-control-label" for="f-Atheletics">Athletics&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 50/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -188,8 +194,14 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input"  name="events[]" value="f-Lawntennis" id="f-Lawntennis">
-                                <label class="custom-control-label" for="f-Lawntennis">Lawn-Tennis&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
+                                <input type="checkbox" class="custom-control-input"  name="events[]" value="f-Lawntennis-Team" id="ft-Lawntennis">
+                                <label class="custom-control-label" for="ft-Lawntennis">Lawn-Tennis Team&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 500/-</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  name="events[]" value="f-Lawntennis-Single" id="fs-Lawntennis">
+                                <label class="custom-control-label" for="fs-Lawntennis">Lawn-Tennis Single&nbsp;&nbsp;&nbsp;<strong>Rs</strong> 200/-</label>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -250,13 +262,15 @@
                             </div>
                         </div>
                     </div>
-                    <h4>Accomodation Details</h4>
-                    <label for="accomodation">If you want accomodation, type in the required number?</label>
+                    <h4>Accommodation Details</h4>
+                    <label for="accomodation">If you want accommodation, type in the required number?</label>
                     <input type="number" name="accomodation" class="form-control" value="0" min="0" />
                     <div class="row">
                             <input type="submit" name="submit" class="btnRegister" placeholder="Submit" />
                     </div>
                 </form>
+                <p style="text-align:center; color:white;">In case of queries regarding registration, contact Daivat Rajyaguru: +91 7567558386</p>
+                <br>
             </div>
         </div>
         <script type="text/javascript" src="js/jquery.min.js"></script>
